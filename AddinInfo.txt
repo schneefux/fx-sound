@@ -1,0 +1,12 @@
+//------------------------------------------------------------------
+// Addin-Application header control file, created with the CASIO SDK
+//------------------------------------------------------------------
+[OUTPUT]     : "AUDIO.G1A"
+[BINDATA]    : "FXADDINror.bin"
+[DISPNAME]   : "Audio"
+[APPNAME]    : "@AUDIO"
+[VERSION]    : "01.00.0000"
+[APL_ICON]   : "MainIcon.bmp"
+[MODULE_NUM] : 0
+[MOD1_TITLE] : "Audio"
+[MOD1_ICON]  : "eActivityIcon.bmp"

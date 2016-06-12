@@ -1,0 +1,436 @@
+Hitachi Optimizing Linkage Editor (Ver. 7.1.03.000)15-Nov-2012 16:22:12
+
+*** Options ***
+
+-subcommand=C:\Users\Timo\AppData\Local\Temp\hmk51F8.tmp
+noprelink
+sdebug
+rom D=R
+nomessage
+list "G:\Casio SDK\Projekte\Audio\Debug\FXADDINror.map"
+show symbol
+nooptimize
+start P_TOP,P,C,D,C$VTBL,C$INIT/0300200,B_BR_Size,B,R/08100000
+fsymbol P
+nologo
+input "G:\Casio SDK\Projekte\Audio\Debug\Audio.obj" "G:\Casio SDK\Projekte\Audio\Debug\SYSCALLS.obj"
+input "G:\Casio SDK\OS\FX\lib\setup.obj"
+library "G:\Casio SDK\OS\FX\lib\fx9860G_library.lib"
+library "G:\Casio SDK\OS\FX\lib\revolution.lib"
+output "G:\Casio SDK\Projekte\Audio\Debug\FXADDINror.abs"
+-nomessage=1100
+end
+
+*** Error information ***
+
+*** Mapping List ***
+
+SECTION                            START      END         SIZE   ALIGN
+
+P_TOP
+                                  00300200  0030020b         c   4
+P
+                                  0030020c  00300fcb       dc0   4
+C
+                                  00300fcc  0030103f        74   4
+D
+                                  00301040  003010ab        6c   4
+B_BR_Size
+                                  08100000  08100003         4   4
+B
+                                  08100004  08101f93      1f90   4
+R
+                                  08101f94  08101fff        6c   4
+
+*** Symbol List ***
+
+SECTION=
+FILE=                               START        END    SIZE
+  SYMBOL                            ADDR        SIZE    INFO      COUNTS  OPT
+
+SECTION=P_TOP
+FILE=G:\Casio SDK\Projekte\Audio\Debug\Audio.obj
+                                  00300200  0030020b         c
+  _InitializeSystem
+                                  00300200         c   func ,g         * 
+
+SECTION=P
+FILE=G:\Casio SDK\Projekte\Audio\Debug\Audio.obj
+                                  0030020c  00300387       17c
+  _Open
+                                  0030020c        34   func ,g         * 
+  _AddIn_main
+                                  00300240       148   func ,g         * 
+FILE=G:\Casio SDK\Projekte\Audio\Debug\SYSCALLS.obj
+                                  00300388  00300557       1d0
+  _Serial_ReadOneByte
+                                  00300388         0   none ,g         * 
+  _Serial_BufferedTransmitOneByte
+                                  00300398         0   none ,g         * 
+  _Serial_Open
+                                  003003a8         0   none ,g         * 
+  _Serial_Close
+                                  003003b8         0   none ,g         * 
+  _RTC_GetTicks
+                                  003003c8         0   none ,g         * 
+  _KBD_PRGM_GetKey
+                                  003003d8         0   none ,g         * 
+  _Disp_GetVRAMPtr
+                                  003003e8         0   none ,g         * 
+  _PutDisp_DD
+                                  003003f8         0   none ,g         * 
+  _DrawLineVRAM
+                                  00300408         0   none ,g         * 
+  _AllClr_DD
+                                  00300418         0   none ,g         * 
+  _AllClr_VRAM
+                                  00300428         0   none ,g         * 
+  _AllClr_DDVRAM
+                                  00300438         0   none ,g         * 
+  _Sleep
+                                  00300448         0   none ,g         * 
+  _GetKey
+                                  00300458         0   none ,g         * 
+  _locate
+                                  00300468         0   none ,g         * 
+  _Print
+                                  00300478         0   none ,g         * 
+  _Timer_Install
+                                  00300488         0   none ,g         * 
+  _Timer_Uninstall
+                                  00300498         0   none ,g         * 
+  _Timer_Start
+                                  003004a8         0   none ,g         * 
+  _App_RUNMAT
+                                  003004b8         0   none ,g         * 
+  _itoa
+                                  003004c8         0   none ,g         * 
+  _EditExpression
+                                  003004d8         0   none ,g         * 
+  _Reboot
+                                  003004e8         0   none ,g         * 
+  _RTC_SetDateTime
+                                  003004f8         0   none ,g         * 
+  _RTC_Reset
+                                  00300508         0   none ,g         * 
+  _RTC_GetTime
+                                  00300518         0   none ,g         * 
+  _PowerOff
+                                  00300528         0   none ,g         * 
+  _Serial_WriteByte
+                                  00300538         0   none ,g         * 
+  _PutKey
+                                  00300548         0   none ,g         * 
+FILE=G:\Casio SDK\OS\FX\lib\setup.obj
+                                  00300558  00300673       11c
+  ___LINK_PROTECT
+                                  00300558         4   func ,g         * 
+  _SetQuitHandler
+                                  0030055c         6   func ,g         * 
+  _OnAppCloseDefault
+                                  00300562        54   func ,g         * 
+  __INITSCT_ADDIN
+                                  003005b6        48   func ,g         * 
+  _INIT_ADDIN_APPLICATION
+                                  003005fe        76   func ,g         * 
+FILE=__s_mvn
+                                  00300674  003006ab        38
+  __slow_mvn
+                                  00300674         0   none ,g         * 
+  SMVN_B
+                                  00300682         0   none ,l         * 
+  SMVN_END
+                                  003006a4         0   none ,l         * 
+FILE=_Bdel_cychdr
+                                  003006ac  003006bb        10
+  _Bdel_cychdr
+                                  003006ac         0   none ,g         * 
+FILE=_Bdisp_AllClr_VRAM
+                                  003006bc  003006cb        10
+  _Bdisp_AllClr_VRAM
+                                  003006bc         0   none ,g         * 
+FILE=_Bdisp_PutDisp_DD
+                                  003006cc  003006db        10
+  _Bdisp_PutDisp_DD
+                                  003006cc         0   none ,g         * 
+FILE=_BfileFLS_CloseFile
+                                  003006dc  003006eb        10
+  _BfileFLS_CloseFile
+                                  003006dc         0   none ,g         * 
+FILE=_Bkey_GetKeyWait
+                                  003006ec  003006fb        10
+  _Bkey_GetKeyWait
+                                  003006ec         0   none ,g         * 
+FILE=_Bkey_Set_RepeatTime_Default
+                                  003006fc  0030070b        10
+  _Bkey_Set_RepeatTime_Default
+                                  003006fc         0   none ,g         * 
+FILE=_CallbackAtQuitMainFunction
+                                  0030070c  0030071b        10
+  _CallbackAtQuitMainFunction
+                                  0030070c         0   none ,g         * 
+FILE=_flsFindClose
+                                  0030071c  0030072b        10
+  _flsFindClose
+                                  0030071c         0   none ,g         * 
+FILE=_GLibAddinAplExecutionCheck
+                                  0030072c  0030073b        10
+  _GLibAddinAplExecutionCheck
+                                  0030072c         0   none ,g         * 
+FILE=_Hmem_SetMMU
+                                  0030073c  0030074b        10
+  _Hmem_SetMMU
+                                  0030073c         0   none ,g         * 
+FILE=filebios
+                                  0030074c  00300e7b       730
+  _BfileMCS_GetFileHandle
+                                  0030074c        6e   func ,g         * 
+  _Bfile_CloseFile
+                                  003007ba        6e   func ,g         * 
+  _BfileMCS_HandleCheck
+                                  00300828        40   func ,g         * 
+  _MCSFile_InitAll
+                                  00300868        3c   func ,g         * 
+  _Bfile_ReadFile
+                                  003008a4        e8   func ,g         * 
+  _Bfile_WriteFile
+                                  0030098c        de   func ,g         * 
+  _Bfile_SeekFile
+                                  00300a6a        6a   func ,g         * 
+  _Bfile_OpenMainMemory
+                                  00300ad4        42   func ,g         * 
+  _Bfile_OpenFile
+                                  00300b16         6   func ,g         * 
+  _Bfile_GetMediaFree
+                                  00300b1c        cc   func ,g         * 
+  _Bfile_GetFileSize
+                                  00300be8        7a   func ,g         * 
+  _Bfile_CreateMainMemory
+                                  00300c62        84   func ,g         * 
+  _Bfile_CreateFile
+                                  00300ce6        16   func ,g         * 
+  _Bfile_CreateDirectory
+                                  00300cfc         8   func ,g         * 
+  _Bfile_RenameMainMemory
+                                  00300d04        6a   func ,g         * 
+  _Bfile_DeleteMainMemory
+                                  00300d6e        6a   func ,g         * 
+  _Bfile_DeleteFile
+                                  00300dd8        40   func ,g         * 
+  _Bfile_DeleteDirectory
+                                  00300e18        64   func ,g         * 
+FILE=strncmp
+                                  00300e7c  00300eb9        3e
+  _strncmp
+                                  00300e7c        3e   func ,g         * 
+FILE=_Bfile_CloseFile
+                                  00300ebc  00300ecb        10
+  _Bfile_CloseFile_OS
+                                  00300ebc         0   none ,g         * 
+FILE=_Bfile_CreateEntry
+                                  00300ecc  00300edb        10
+  _Bfile_CreateEntry
+                                  00300ecc         0   none ,g         * 
+FILE=_Bfile_DeleteEntry
+                                  00300edc  00300eeb        10
+  _Bfile_DeleteEntry
+                                  00300edc         0   none ,g         * 
+FILE=_Bfile_GetFileSize
+                                  00300eec  00300efb        10
+  _Bfile_GetFileSize_OS
+                                  00300eec         0   none ,g         * 
+FILE=_Bfile_GetMediaFree
+                                  00300efc  00300f0b        10
+  _Bfile_GetMediaFree_OS
+                                  00300efc         0   none ,g         * 
+FILE=_Bfile_OpenFile
+                                  00300f0c  00300f1b        10
+  _Bfile_OpenFile_OS
+                                  00300f0c         0   none ,g         * 
+FILE=_Bfile_ReadFile
+                                  00300f1c  00300f2b        10
+  _Bfile_ReadFile_OS
+                                  00300f1c         0   none ,g         * 
+FILE=_Bfile_SeekFile
+                                  00300f2c  00300f3b        10
+  _Bfile_SeekFile_OS
+                                  00300f2c         0   none ,g         * 
+FILE=_Bfile_WriteFile
+                                  00300f3c  00300f4b        10
+  _Bfile_WriteFile_OS
+                                  00300f3c         0   none ,g         * 
+FILE=_BMCSRenameVariable
+                                  00300f4c  00300f5b        10
+  _BMCSRenameVariable
+                                  00300f4c         0   none ,g         * 
+FILE=_GetAppName
+                                  00300f5c  00300f6b        10
+  _GetAppName
+                                  00300f5c         0   none ,g         * 
+FILE=_MCSDelVar2
+                                  00300f6c  00300f7b        10
+  _MCSDelVar2
+                                  00300f6c         0   none ,g         * 
+FILE=_MCSGetCapa
+                                  00300f7c  00300f8b        10
+  _MCSGetCapa
+                                  00300f7c         0   none ,g         * 
+FILE=_MCSGetData1
+                                  00300f8c  00300f9b        10
+  _MCSGetData1
+                                  00300f8c         0   none ,g         * 
+FILE=_MCSGetDlen2
+                                  00300f9c  00300fab        10
+  _MCSGetDlen2
+                                  00300f9c         0   none ,g         * 
+FILE=_MCSOvwDat2
+                                  00300fac  00300fbb        10
+  _MCSOvwDat2
+                                  00300fac         0   none ,g         * 
+FILE=_MCSPutVar2
+                                  00300fbc  00300fcb        10
+  _MCSPutVar2
+                                  00300fbc         0   none ,g         * 
+
+SECTION=C
+FILE=G:\Casio SDK\Projekte\Audio\Debug\Audio.obj
+                                  00300fcc  00301007        3c
+  _LowTable$307
+                                  00300fd2         8   data ,l         * 
+FILE=addin_sct
+                                  00301008  0030101b        14
+  _B_BGN
+                                  00301008         0   none ,g         * 
+  _B_END
+                                  0030100c         0   none ,g         * 
+  _R_BGN
+                                  00301010         0   none ,g         * 
+  _R_END
+                                  00301014         0   none ,g         * 
+  _D_ROM
+                                  00301018         0   none ,g         * 
+
+SECTION=B_BR_Size
+FILE=G:\Casio SDK\Projekte\Audio\Debug\Audio.obj
+                                  08100000  08100003         4
+  _BR_Size
+                                  08100000         4   data ,g         * 
+
+SECTION=B
+FILE=G:\Casio SDK\Projekte\Audio\Debug\Audio.obj
+                                  08100004  08101f93      1f90
+  _UserStack
+                                  08100004      1f90   data ,g         * 
+
+SECTION=R
+FILE=G:\Casio SDK\Projekte\Audio\Debug\Audio.obj
+                                  08101f94  08101f95         2
+  _giBufIndex$308
+                                  08101f94         2   data ,l         * 
+FILE=G:\Casio SDK\OS\FX\lib\setup.obj
+                                  08101f98  08101f9b         4
+  _gb_OnAppClose
+                                  08101f98         4   data ,g         * 
+FILE=filebios
+                                  08101f9c  08101fff        64
+  _MCSpt
+                                  08101f9c        64   data ,g         * 
+
+Absolute value symbols
+FILE=_Bdel_cychdr
+  __JumpTableTOP
+                                  80010070         0   none ,l         * 
+FILE=_Bdisp_AllClr_VRAM
+  __JumpTableTOP
+                                  80010070         0   none ,l         * 
+FILE=_Bdisp_PutDisp_DD
+  __JumpTableTOP
+                                  80010070         0   none ,l         * 
+FILE=_BfileFLS_CloseFile
+  __JumpTableTOP
+                                  80010070         0   none ,l         * 
+FILE=_Bkey_GetKeyWait
+  __JumpTableTOP
+                                  80010070         0   none ,l         * 
+FILE=_Bkey_Set_RepeatTime_Default
+  __JumpTableTOP
+                                  80010070         0   none ,l         * 
+FILE=_CallbackAtQuitMainFunction
+  __JumpTableTOP
+                                  80010070         0   none ,l         * 
+FILE=_flsFindClose
+  __JumpTableTOP
+                                  80010070         0   none ,l         * 
+FILE=_GLibAddinAplExecutionCheck
+  __JumpTableTOP
+                                  80010070         0   none ,l         * 
+FILE=_Hmem_SetMMU
+  __JumpTableTOP
+                                  80010070         0   none ,l         * 
+FILE=_Bfile_CloseFile
+  __JumpTableTOP
+                                  80010070         0   none ,l         * 
+FILE=_Bfile_CreateEntry
+  __JumpTableTOP
+                                  80010070         0   none ,l         * 
+FILE=_Bfile_DeleteEntry
+  __JumpTableTOP
+                                  80010070         0   none ,l         * 
+FILE=_Bfile_GetFileSize
+  __JumpTableTOP
+                                  80010070         0   none ,l         * 
+FILE=_Bfile_GetMediaFree
+  __JumpTableTOP
+                                  80010070         0   none ,l         * 
+FILE=_Bfile_OpenFile
+  __JumpTableTOP
+                                  80010070         0   none ,l         * 
+FILE=_Bfile_ReadFile
+  __JumpTableTOP
+                                  80010070         0   none ,l         * 
+FILE=_Bfile_SeekFile
+  __JumpTableTOP
+                                  80010070         0   none ,l         * 
+FILE=_Bfile_WriteFile
+  __JumpTableTOP
+                                  80010070         0   none ,l         * 
+FILE=_BMCSRenameVariable
+  __JumpTableTOP
+                                  80010070         0   none ,l         * 
+FILE=_GetAppName
+  __JumpTableTOP
+                                  80010070         0   none ,l         * 
+FILE=_MCSDelVar2
+  __JumpTableTOP
+                                  80010070         0   none ,l         * 
+FILE=_MCSGetCapa
+  __JumpTableTOP
+                                  80010070         0   none ,l         * 
+FILE=_MCSGetData1
+  __JumpTableTOP
+                                  80010070         0   none ,l         * 
+FILE=_MCSGetDlen2
+  __JumpTableTOP
+                                  80010070         0   none ,l         * 
+FILE=_MCSOvwDat2
+  __JumpTableTOP
+                                  80010070         0   none ,l         * 
+FILE=_MCSPutVar2
+  __JumpTableTOP
+                                  80010070         0   none ,l         * 
+
+*** Delete Symbols ***
+
+SYMBOL                                SIZE    INFO
+
+*** Variable Accessible with Abs8 ***
+
+SYMBOL                                SIZE    COUNTS  OPTIMIZE
+
+*** Variable Accessible with Abs16 ***
+
+SYMBOL                                SIZE    COUNTS  OPTIMIZE
+
+*** Function Call ***
+
+SYMBOL                              COUNTS  OPTIMIZE
